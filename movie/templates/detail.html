@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+
+
+
+
+<div class=" text-center">
+    <div class="card-header text-white bg-info ">
+     Movie-Name
+  </div>
+    
+    <div class="text-white bg-secondary"  >
+       <img style="width: 200px; height: 200px;" src="{% static 'img/linux.png' %}" class="card-img-top" alt="...">
+
+    </div>
+  <div class="card-body text-white bg-secondary " >  
+        <h8 class="card-title">Movie Name: {{movies.name}}  </h8><br>
+        <h8 class="card-title">Genre    : {{movies.genre}} </h8><br>
+        <h8 class="card-title">Release-Date: {{movies.release_date}}  </h8><br>
+        <h8 class="card-title">Casts       : {{movies.casts}}  </h8><br>
+        <h8 class="card-title">Length       : {{movies.length}}  </h8><br>
+        <h8 class="card-title">Language       :  {{movies.language}} </h8><br>
+        <h8 class="card-title"> Budget    : {{movies.budget}}  </h8>
+  
+  
+  </div>
+  <div class="card-footer text-white bg-info ">
+  IMDB-Rating: 10/10
+  </div>
+</div>
+
+{% endblock body %}
